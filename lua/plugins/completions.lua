@@ -3,6 +3,9 @@ return {
     "hrsh7th/cmp-nvim-lsp"
   },
   {
+    'tpope/vim-surround'
+  },
+  {
     "L3MON4D3/LuaSnip",
     dependencies = {
       "saadparwaiz1/cmp_luasnip",
