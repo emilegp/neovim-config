@@ -75,6 +75,21 @@ return {
         " Map <leader>tf to the MovePngFiles function
         nmap <leader>tf :call MovePngFiles()<CR>
       ]], false)
+
+      -- Autosave configuration
+      vim.api.nvim_exec([[
+        augroup AutoSave
+          autocmd!
+          " Save on leaving insert mode
+          autocmd InsertLeave * if &modifiable && &filetype == 'tex' && &modified | silent! write | endif
+          " Save on losing focus
+          autocmd FocusLost * if &modifiable && &filetype == 'tex' && &modified | silent! write | endif
+          " Save on leaving normal mode
+          autocmd BufLeave * if &modifiable && &filetype == 'tex' && &modified | silent! write | endif
+          " Save on text changed events in normal and visual mode
+          autocmd TextChanged * if &modifiable && mode() !~ 'i' && &filetype == 'tex' && &modified | silent! write | endif
+        augroup END
+      ]], false)
     end,
   },
 }
