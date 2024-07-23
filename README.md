@@ -39,3 +39,4 @@ After blood, sweat and tears, here's my (hopefully still) working neovim configu
 - [x] Github backup
 - [ ] Crazy fast snippets for latex
 - [ ] Correction of bugs
+- [ ] Put all keybinds in one place
