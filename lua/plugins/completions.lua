@@ -13,23 +13,14 @@ return {
     },
     config = function()
       local ls = require("luasnip")
-      -- Load your custom snippets
-      local snippets = require("config.latex-snippets")
+      require("luasnip.loaders.from_vscode").lazy_load()
+      require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/config/latex-snippets.lua" })
 
       ls.config.set_config {
         history = true,
         updateevents = "TextChanged,TextChangedI",
+        enable_autosnippets = true,  -- Ensure autosnippets are enabled
       }
-
-      require("luasnip.loaders.from_vscode").lazy_load()
-
-      -- Set up key bindings for specific snippets
-      vim.api.nvim_set_keymap('n', '<leader>lf', [[:lua require'config.latex-snippets'.expand_snippet('latexfigure')<CR>]], { noremap = true, silent = true })
-      vim.api.nvim_set_keymap('n', '<leader>le', [[:lua require'config.latex-snippets'.expand_snippet('latexequation')<CR>]], { noremap = true, silent = true })
-      vim.api.nvim_set_keymap('n', '<leader>la', [[:lua require'config.latex-snippets'.expand_snippet('latexalign')<CR>]], { noremap = true, silent = true })
-      vim.api.nvim_set_keymap('n', '<leader>lm', [[:lua require'config.latex-snippets'.expand_snippet('latexmatrix')<CR>]], { noremap = true, silent = true })
-      vim.api.nvim_set_keymap('n', '<leader>lb', [[:lua require'config.latex-snippets'.expand_snippet('latexcodeblock')<CR>]], { noremap = true, silent = true })
-      vim.api.nvim_set_keymap('n', '<leader>lc', [[:lua require'config.latex-snippets'.expand_snippet('latexcode')<CR>]], { noremap = true, silent = true })
 
       -- Optional: Set up key mappings for snippet navigation
       vim.api.nvim_set_keymap('i', '<C-k>', [[<Cmd>lua require'luasnip'.expand_or_jump()<CR>]], { silent = true })
