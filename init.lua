@@ -13,8 +13,11 @@ smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Ta
 " Use Shift-Tab to jump backwards through snippets for both modes also
 imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
-]]
 
+" Cycle forward through choice nodes with Control-f
+imap <silent><expr> <C-f> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-f>'
+smap <silent><expr> <C-f> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-f>'
+]]
 
 -- Load snippets from ~/.config/nvim/LuaSnip/
 require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})

@@ -40,3 +40,16 @@ After blood, sweat and tears, here's my (hopefully still) working neovim configu
 - [ ] Crazy fast snippets for latex
 - [ ] Correction of bugs
 - [ ] Keep a list of all keybinds, mine and vim ones
+
+## Snippets to implement
+
+Restrict snippets to certain modes or at the beginning of a line
+
+- greek letters
+- frac
+- integrals
+- derivatives
+- matrices!!!
+- figs
+- itemize
+- 

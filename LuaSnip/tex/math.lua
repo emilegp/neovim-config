@@ -8,3 +8,21 @@ local d = ls.dynamic_node
 local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
+
+return {
+s({trig=";a", snippetType="autosnippet"},
+  {
+    t("\\alpha"),
+  }
+),
+s({trig=";b", snippetType="autosnippet"},
+  {
+    t("\\beta"),
+  }
+),
+s({trig=";g", snippetType="autosnippet"},
+  {
+    t("\\gamma"),
+  }
+),
+}
