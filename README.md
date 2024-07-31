@@ -52,4 +52,4 @@ Restrict snippets to certain modes or at the beginning of a line
 - matrices!!!
 - figs
 - itemize
-- 
+- diff character 
