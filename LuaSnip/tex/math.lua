@@ -9,20 +9,20 @@ local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
 
+local in_mathzone = function()
+  return vim.fn['vimtex#syntax#in_mathzone']() == 1
+end
+
+
 return {
-s({trig=";a", snippetType="autosnippet"},
-  {
-    t("\\alpha"),
-  }
-),
-s({trig=";b", snippetType="autosnippet"},
-  {
-    t("\\beta"),
-  }
-),
-s({trig=";g", snippetType="autosnippet"},
-  {
-    t("\\gamma"),
-  }
+s({trig = "ff", snippetType="autosnippet"},
+  fmta(
+    "\\frac{<>}{<>}",
+    {
+      i(1),
+      i(2),
+    }
+  ),
+  {condition = in_mathzone}  -- `condition` option passed in the snippet `opts` table 
 ),
 }
