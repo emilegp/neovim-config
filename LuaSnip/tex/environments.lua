@@ -12,7 +12,7 @@ local rep = require("luasnip.extras").rep
 local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
 return {
-s({trig = "h1", dscr="Top-level section"},
+s({trig = "h1", dscr="Top-level section", snippetType="autosnippet"},
   fmta(
     [[\section{<>}]],
     { i(1) }
@@ -20,7 +20,7 @@ s({trig = "h1", dscr="Top-level section"},
   {condition = line_begin}  -- set condition in the `opts` table
 ),
 
-s({trig="new", dscr="A generic new environmennt"},
+s({trig="new", dscr="A generic new environmennt", snippetType="autosnippet"},
   fmta(
     [[
       \begin{<>}

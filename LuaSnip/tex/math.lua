@@ -23,6 +23,6 @@ s({trig = "ff", snippetType="autosnippet"},
       i(2),
     }
   ),
-  {condition = in_mathzone}  -- `condition` option passed in the snippet `opts` table 
+  {condition = in_mathzone}
 ),
 }
