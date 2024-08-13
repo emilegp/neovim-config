@@ -1,6 +1,8 @@
 # List of snippets to implement
 
-- math mode
+DO NOT FORGET ABOUT WordTrig
+add placeholder text for templates
+
 - fraction
 - greek letters
 - check list of math symbols like \vec
@@ -9,7 +11,8 @@
 - generic sums, derivatives and integrals
 - si units
 
-
+- equation
+- align
 - \text, \textit, etc
 - \label
 - \ref
@@ -29,6 +32,8 @@
 ## Begin of line only
 
 - `it` : itemize environnement (to do sub items, nesting this environnement in another works wonder)
+- `en` : enumerate environnement
+- `-` : item in itemize and enumerate env
 - `sec` : section header
 - `sub` : subsection header
 - `ssub` : subsubsection header

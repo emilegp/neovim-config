@@ -11,8 +11,26 @@ local rep = require("luasnip.extras").rep
 
 local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
+local in_mathzone = function()
+  return vim.fn['vimtex#syntax#in_mathzone']() == 1
+end
+
 local not_in_mathzone = function()
-  return vim.fn['vimtex#syntax#in_mathzone']() == 0
+  return not in_mathzone
+end
+
+local in_itemize = function()
+  local is_inside = vim.fn['vimtex#env#is_inside']('itemize')
+  return (is_inside[1] > 0 and is_inside[2] > 0)
+end
+
+local in_enumerate = function()
+  local is_inside = vim.fn['vimtex#env#is_inside']('enumerate')
+  return (is_inside[1] > 0 and is_inside[2] > 0)
+end
+
+local can_item = function()
+  return (in_itemize() or in_enumerate())
 end
 
 return {
@@ -66,7 +84,7 @@ s({trig="it", dscr="itemize environment", snippetType="autosnippet"},
   fmta(
     [[
       \begin{itemize}
-        \item <>
+      \item <>
       \end{itemize}
       
       <>
@@ -77,6 +95,35 @@ s({trig="it", dscr="itemize environment", snippetType="autosnippet"},
     }
   ),
   {condition = line_begin}
+),
+
+s({trig="en", dscr="enumerate environment", snippetType="autosnippet"},
+  fmta(
+    [[
+      \begin{enumerate}
+      \item <>
+      \end{enumerate}
+      
+      <>
+    ]],
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = line_begin}
+),
+
+s({trig="-", dscr="item in itemize or enumerate", snippetType="autosnippet"},
+  fmta(
+    [[
+    \item <>
+    ]],
+    {
+      i(1)
+    }
+  ),
+  {condition = can_item}
 ),
 
 s({trig="fi", dscr="figure environmennt", snippetType="autosnippet"},
