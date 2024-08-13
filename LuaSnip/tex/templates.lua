@@ -12,7 +12,7 @@ local rep = require("luasnip.extras").rep
 local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
 return {
-  s({ trig = "tph", dscr = "LaTeX homework template", snippetType = "autosnippet" },
+  s({ trig = "tph", dscr = "LaTeX homework template"},
     fmta(
       [[
         \documentclass[11pt,letterpaper]{article}
@@ -140,7 +140,7 @@ return {
     { condition = line_begin }
   ),
 
-  s({ trig = "tpn", dscr = "LaTeX notes template", snippetType = "autosnippet" },
+  s({ trig = "tpn", dscr = "LaTeX notes template"},
     fmta(
       [[
         \documentclass[11pt,letterpaper]{article}
@@ -223,7 +223,7 @@ return {
     { condition = line_begin }
   ),
 
-  s({ trig = "tpp", dscr = "LaTeX project template", snippetType = "autosnippet" },
+  s({ trig = "tpp", dscr = "LaTeX project template"},
     fmta(
       [[
         \documentclass[11pt,letterpaper]{article}

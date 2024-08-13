@@ -10,11 +10,6 @@
 - si units
 
 
-- figure
-- section
-- subsection
-- subsubsection
-- $$
 - \text, \textit, etc
 - \label
 - \ref
@@ -33,9 +28,20 @@
 
 ## Begin of line only
 
+- `it` : itemize environnement (to do sub items, nesting this environnement in another works wonder)
+- `sec` : section header
+- `sub` : subsection header
+- `ssub` : subsubsection header
+- `fi` : figure environnement
+- `mm` : math mode in text ($$)
+- `mu` : math equation unnumbered (\\[\\])
 
 ## Math mode
 
-- ff : fraction
+- `ff` : fraction
 
-## Templates
+## Templates (need tab)
+
+- `tph` : template for homework
+- `tpn` : template for notes
+- `tpp` : template for projects

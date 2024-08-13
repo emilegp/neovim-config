@@ -13,6 +13,9 @@ local in_mathzone = function()
   return vim.fn['vimtex#syntax#in_mathzone']() == 1
 end
 
+local not_in_mathzone = function()
+  return vim.fn['vimtex#syntax#in_mathzone']() == 0
+end
 
 return {
 s({trig = "ff", snippetType="autosnippet"},
