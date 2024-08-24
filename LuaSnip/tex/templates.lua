@@ -130,10 +130,10 @@ return {
         \end{document}
       ]],
       {
-        i(1),
-        i(2),
-        i(3),
-        i(4),
+        i(1, "cours/sujet"),
+        i(2, "titre"),
+        i(3, "date"),
+        i(4, "section title"),
         i(0),
       }
     ),
@@ -214,9 +214,9 @@ return {
         \end{document}
       ]],
       {
-        i(1),
-        i(2),
-        i(3),
+        i(1, "cours/sujet"),
+        i(2, "titre"),
+        i(3, "section"),
         i(0),
       }
     ),
@@ -341,10 +341,10 @@ return {
         \end{document}
       ]],
       {
-        i(1),
-        i(2),
-        i(3),
-        i(4),
+        i(1, "cours/sujet"),
+        i(2, "titre"),
+        i(3, "date"),
+        i(4, "section"),
         i(0),
       }
     ),
