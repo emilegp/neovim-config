@@ -173,4 +173,81 @@ s({trig="mu", dscr="math equation but unnumbered", snippetType="autosnippet"},
   ),
   {condition = not_in_mathzone}
 ),
+
+s({trig="eq", dscr="equation environment", snippetType="autosnippet"},
+  fmta(
+    [[
+      \begin{equation}
+        <>
+      \end{equation}
+      
+      <>
+    ]],
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = line_begin}
+),
+
+s({trig="al", dscr="align environment", snippetType="autosnippet"},
+  fmta(
+    [[
+      \begin{align}
+        <>
+      \end{align}
+      
+      <>
+    ]],
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = line_begin}
+),
+
+s({trig = "ct", dscr="code text", snippetType="autosnippet"},
+  fmta(
+    [[
+      \texttt{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "tt", dscr="normal text for math mode", snippetType="autosnippet"},
+  fmta(
+    [[
+      \text{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "tit", dscr="italics text", snippetType="autosnippet"},
+  fmta(
+    [[
+      \textit{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {}
+),
+
 }

@@ -38,6 +38,8 @@
 ## Math mode
 
 - `ff` : fraction
+- `sq` : square root
+- `nsq` : nth root
 
 ### Greek letters
 
