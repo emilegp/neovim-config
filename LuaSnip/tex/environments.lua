@@ -250,4 +250,19 @@ s({trig = "tit", dscr="italics text", snippetType="autosnippet"},
   {}
 ),
 
+s({trig = "tb", dscr="bold text", snippetType="autosnippet"},
+  fmta(
+    [[
+      \textbf{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {}
+),
+
+
 }

@@ -1,15 +1,14 @@
 # List of snippets to implement
 
 - check list of math symbols like \vec
+- differential
 - matrix
 - general subscript and superscript
 - generic sums, derivatives and integrals
 - si units
 - parenthesis w left and right
 
-- equation
-- align
-- \text, \textit, etc
+- \textit, textbf, underline
 - \label
 - \ref
 - \cite
@@ -32,11 +31,20 @@
 - `sub` : subsection header
 - `ssub` : subsubsection header
 - `fi` : figure environnement
+- `eq` : equation environment
+- `al` : align environment
+
+## In text
+
 - `mm` : math mode in text ($$)
 - `mu` : math equation unnumbered (\\[\\])
+- `ct` : text for code
+- `tit` : italics text
+- `tb` : bold text
 
 ## Math mode
 
+- `tt` : text block
 - `ff` : fraction
 - `sq` : square root
 - `nsq` : nth root
