@@ -1,10 +1,6 @@
 # List of snippets to implement
 
-DO NOT FORGET ABOUT WordTrig
-add placeholder text for templates
-
-- fraction
-- greek letters
+- variants of greek letters
 - check list of math symbols like \vec
 - matrix
 - general subscript and superscript
@@ -17,9 +13,7 @@ add placeholder text for templates
 - \label
 - \ref
 - \cite
-- table
-- list (enumerate)
-- comment line
+- table ? see if necessary
 - url
 - code element
 - note box https://tex.stackexchange.com/questions/301993/create-custom-note-environment-with-tcolorbox
@@ -44,6 +38,57 @@ add placeholder text for templates
 ## Math mode
 
 - `ff` : fraction
+
+### Greek letters
+
+- `;a` : alpha
+- `;A` : capital alpha
+- `;b` : beta
+- `;B` : capital beta
+- `;g` : gamma
+- `;G` : capital gamma
+- `;d` : delta
+- `;D` : capital delta
+- `;ep` : epsilon
+- `;Ep` : capital epsilon
+- `;z` : zeta
+- `;Z` : capital zeta
+- `;et` : eta
+- `;Et` : capital eta
+- `;th` : theta
+- `;Th` : capital theta
+- `;i` : iota
+- `;I` : capital iota
+- `;k` : kappa
+- `;K` : capital kappa
+- `;l` : lambda
+- `;L` : capital lambda
+- `;m` : mu
+- `;M` : capital mu
+- `;n` : nu
+- `;N` : capital nu
+- `;x` : xi
+- `;X` : capital xi
+- `;om` : omicron
+- `;Om` : capital omicron
+- `;p` : pi
+- `;P` : capital pi
+- `;r` : rho
+- `;R` : capital rho
+- `;s` : sigma
+- `;S` : capital sigma
+- `;ta` : tau
+- `;Ta` : capital tau
+- `;u` : upsilon
+- `;U` : capital upsilon
+- `;ph` : phi
+- `;Ph` : capital phi
+- `;ch` : chi
+- `;Ch` : capital chi
+- `;ps` : psi
+- `;Ps` : capital psi
+- `;oh` : omega !!! this one is weird, it is for ohm !!!
+- `;Oh` : capital omega
 
 ## Templates (need tab)
 
