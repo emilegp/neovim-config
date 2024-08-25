@@ -1,11 +1,11 @@
 # List of snippets to implement
 
-- variants of greek letters
 - check list of math symbols like \vec
 - matrix
 - general subscript and superscript
 - generic sums, derivatives and integrals
 - si units
+- parenthesis w left and right
 
 - equation
 - align
@@ -13,7 +13,7 @@
 - \label
 - \ref
 - \cite
-- table ? see if necessary
+- table
 - url
 - code element
 - note box https://tex.stackexchange.com/questions/301993/create-custom-note-environment-with-tcolorbox
@@ -71,8 +71,8 @@
 - `;X` : capital xi
 - `;om` : omicron
 - `;Om` : capital omicron
-- `;p` : pi
-- `;P` : capital pi
+- `;pi` : pi
+- `;Pi` : capital pi
 - `;r` : rho
 - `;R` : capital rho
 - `;s` : sigma
@@ -89,6 +89,15 @@
 - `;Ps` : capital psi
 - `;oh` : omega !!! this one is weird, it is for ohm !!!
 - `;Oh` : capital omega
+
+- `;;e` : variant epsilon
+- `;;k` : variant kappa
+- `;;p` : variant phi
+- `;;r` : variant rho
+- `;;s` : variant sigma
+- `;;t` : variant theta
+
+### Other symbols
 
 ## Templates (need tab)
 
