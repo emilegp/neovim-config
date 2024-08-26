@@ -4,7 +4,7 @@ After blood, sweat and tears, here's my (hopefully still) working neovim configu
 
 ## System
 
-- Bad HP-Omen laptop
+- Very bad HP-Omen laptop
 - Ubuntu 22.04 LTS X86_64
 - Kernel 6.5.0-41-generic
 - Desktop environnement GNOME 42.9
