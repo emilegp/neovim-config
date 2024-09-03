@@ -1,18 +1,14 @@
 # List of snippets to implement
 
-- check list of math symbols like \vec
-- differential
+- clear list of math symbols
 - matrix
-- general subscript and superscript
-- generic sums, derivatives and integrals
-- si units
-- parenthesis w left and right
+- product, limits
 
-- \textit, textbf, underline
+- underline, subscript, superscript
 - \label
 - \ref
 - \cite
-- table
+- table (pas obligé)
 - url
 - code element
 - note box https://tex.stackexchange.com/questions/301993/create-custom-note-environment-with-tcolorbox
@@ -48,6 +44,29 @@
 - `ff` : fraction
 - `sq` : square root
 - `nsq` : nth root
+- `ha` : hat
+- `su` : subscript
+- `ss` : superscript
+- `sm` : sum
+- `pp` : parenthesis
+- `bb` : right brackets
+- `sb` : squiggly brackets
+- `de` : derivative
+- `pd` : partial derivative
+- `int` : undefined integral
+- `iint` : undefined double integral
+- `iiint` : undefined triple integral
+- `oint` : circular integral
+- `dint` : defined integral
+- `diint` : defined double integral
+- `diiint` : defined triple integral
+- `fint` : infinite integral
+- `soe` : system of equations
+- `nn` : new line for align, matrix and cases
+- `prd` : defined product
+- `ovr` : overline
+- `udr` : underline
+
 
 ### Greek letters
 

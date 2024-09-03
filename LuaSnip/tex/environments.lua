@@ -16,7 +16,7 @@ local in_mathzone = function()
 end
 
 local not_in_mathzone = function()
-  return not in_mathzone
+  return vim.fn['vimtex#syntax#in_mathzone']() == 0
 end
 
 local in_itemize = function()
@@ -161,7 +161,7 @@ s({trig="mm", dscr="inline math mode", snippetType="autosnippet"},
   {condition = not_in_mathzone}
 ),
 
-s({trig="mu", dscr="math equation but unnumbered", snippetType="autosnippet"},
+s({trig="mu", dscr="math equation but unnumbered", snippetType="autosnippet", priority=1100},
   fmta(
     [[
       \[<>\] <>

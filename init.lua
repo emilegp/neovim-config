@@ -25,3 +25,5 @@ require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})
 -- Shortcut to reload snippets
 
 vim.keymap.set('n', '<Leader>L', '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})<CR>')
+
+-- hello world
