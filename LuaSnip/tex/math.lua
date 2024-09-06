@@ -32,6 +32,19 @@ s({trig = "ff", dscr="fraction setup", snippetType="autosnippet", wordTrig = fal
   {condition = in_mathzone}
 ),
 
+s({trig = "ee", dscr="equal", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      = <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+
 s({trig = "sq", dscr="square root setup", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
@@ -194,6 +207,21 @@ s({trig = "de", dscr="derivative", snippetType="autosnippet", wordTrig = false},
   {condition = in_mathzone}
 ),
 
+s({trig = "dse", dscr="second derivative", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \frac{d^2 <>}{d<>^2}<>
+    ]],
+    {
+      i(1),
+      i(2),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+
 s({trig = "pd", dscr="partial derivative", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
@@ -202,6 +230,35 @@ s({trig = "pd", dscr="partial derivative", snippetType="autosnippet", wordTrig =
     {
       i(1),
       i(2),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "psod", dscr="second partial derivative, one variable", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \frac{\partial^2 <>}{\partial <>^2}<>
+    ]],
+    {
+      i(1),
+      i(2),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "pstd", dscr="second partial derivative, two variables", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \frac{\partial^2 <>}{\partial <> \partial <>}<>
+    ]],
+    {
+      i(1),
+      i(2),
+      i(3),
       i(0),
     }
   ),
@@ -346,7 +403,7 @@ s({trig = "pp", dscr="parenthesis", snippetType="autosnippet", wordTrig = false}
 s({trig = "bb", dscr="right brackets", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \left[ <> \r{ight]<>
+      \left[ <> \right]<>
     ]],
     {
       i(1),
@@ -437,7 +494,454 @@ s({trig = "udr", dscr="underline", snippetType="autosnippet", wordTrig = false},
   {condition = in_mathzone}
 ),
 
+s({trig = "sc", dscr="scalar dot product", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \cdot <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
 
+s({trig = "xx", dscr="times cross", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \times <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "dv", dscr="division symbol", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \div <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "eu", dscr="equivalent aka triple line equal", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \equiv <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "neq", dscr="not equal", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \neq <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "sim", dscr="similar or tilde", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \sim <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "ap", dscr="approximate equal", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \approx <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "pt", dscr="proportionnal to", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \propto <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "pm", dscr="plus minus", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \pm <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "mp", dscr="minus plus", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \mp <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "qed", dscr="box", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \Box <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "leq", dscr="less or equal than", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \leq <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "nleq", dscr="not less or equal than", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \nleq <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "geq", dscr="greater or equal than", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \geq <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "ngeq", dscr="not greater or equal than", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \ngeq <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "iel", dscr="is element of", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \in <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "niel", dscr="is not element of", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \nin <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "wd", dscr="wedge", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \wedge <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "da", dscr="dagger", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \dagger <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "al", dscr="arrow left", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \leftarrow <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "aal", dscr="double arrow left", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \Leftarrow <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "ar", dscr="arrow right", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \rightarrow <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "im", dscr="double arrow right or implies", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \Rightarrow <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "nim", dscr="double arrow right or implies", snippetType="autosnippet", wordTrig = false, priority=1002},
+  fmta(
+    [[
+      \nRightarrow <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "ie", dscr="double arrow left right or is equivalent to", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \Leftrightarrow <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "inf", dscr="infinity", snippetType="autosnippet", wordTrig = false, priority=1011},
+  fmta(
+    [[
+      \infty <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "nb", dscr="nabla", snippetType="autosnippet", wordTrig = false, priority=1011},
+  fmta(
+    [[
+      \nabla <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "dl", dscr="partial derivative del", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \partial <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "fra", dscr="for all", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \forall <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "exi", dscr="exists", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \exists <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "nth", dscr="nothing", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \varnothing <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "hb", dscr="hbar", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \hbar <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "dt", dscr="dot on top", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \dot{<>}<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "ddt", dscr="double dot on top", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \ddot{<>}<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "td", dscr="tilde on top", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \tilde{<>}<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "bar", dscr="bar on top", snippetType="autosnippet", wordTrig = false, priority=1100},
+  fmta(
+    [[
+      \bar{<>}<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "mab", dscr="mathbb style for capital letters", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \mathbb{<>}<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
 
 }
 

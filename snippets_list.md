@@ -1,9 +1,6 @@
 # List of snippets to implement
 
-- clear list of math symbols
 - product, limits
-- second total and partial derivative
-
 - underline, subscript, superscript
 - \label
 - \ref
@@ -41,9 +38,15 @@
 ## Math mode
 
 - `tt` : text block
+- `ee` : equals
 - `ff` : fraction
 - `sq` : square root
 - `nsq` : nth root
+- `vv` : vector arrow
+- `bra` : quantum mechanics bra
+- `ket` : quantum mechanics ket
+- `bk` : quantum mechanics braket
+- `bok` : quantum mechanics bra-operator-ket
 - `ha` : hat
 - `su` : subscript
 - `ss` : superscript
@@ -52,7 +55,10 @@
 - `bb` : right brackets
 - `sb` : squiggly brackets
 - `de` : derivative
+- `dse` : double derivative
 - `pd` : partial derivative
+- `psod` : partial second derivative, one variable
+- `pstd` : partial second derivative, two variables
 - `int` : undefined integral
 - `iint` : undefined double integral
 - `iiint` : undefined triple integral
@@ -60,13 +66,58 @@
 - `dint` : defined integral
 - `diint` : defined double integral
 - `diiint` : defined triple integral
-- `fint` : infinite integral
+- `fint` :infinite integral
 - `soe` : system of equations
 - `nn` : new line for align, matrix and cases
 - `prd` : defined product
 - `ovr` : overline
 - `udr` : underline
+- `sc` : scalar dot product
+- `xx` : times cross
+- `eu` : equivalent equal (triple lines)
+- `neq` : not equal
+- `sim` : sim or tilde
+- `ap` : approximate equal
+- `pt` : proportionnal to
+- `pm` : plus minus
+- `mp` : minus plus
+- `qed` : box
+- `leq` : less or equal
+- `nleq` : not less or equal
+- `geq` : greater or equal
+- `ngeq` : not greater or equal
+- `iel` : is element of
+- `niel` : is not element of
+- `wd` : wedge
+- `da` : dagger
+- `al` : arrow left
+- `aal` : double arrow left
+- `ar` : arrow right
+- `im` : implies or double arrow right
+- `nim` : does not imply
+- `ie` : is equivalent to or double arrow left right
+- `inf` : infinity
+- `nb` : nabla
+- `dl` : del
+- `fra` : for all
+- `exi` : there exists
+- `nth` : nothing
+- `hb` : hbar
+- `dt` : dot on top
+- `ddt` : double dot on top
+- `td` : tilde on top
+- `bar` : bar on top
+- `mab` : mathbb style for capital letters (e.g. R for real numbers)
 
+
+
+
+#### Exclusions
+
+- `\ll` for <<
+- `\gg` for >>
+- `\Re` for real
+- `\Im` for imaginary
 
 ### Greek letters
 
