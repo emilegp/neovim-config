@@ -1,8 +1,8 @@
 # List of snippets to implement
 
 - clear list of math symbols
-- matrix
 - product, limits
+- second total and partial derivative
 
 - underline, subscript, superscript
 - \label
@@ -126,7 +126,18 @@
 - `;;s` : variant sigma
 - `;;t` : variant theta
 
-### Other symbols
+### Matrices
+
+Possible matrices x lines * y columns
+
+1x1, 1x2, 1x3, 1x4, 1x5, 1x6, 2x1, 3x1, 4x1, 5x1, 6x1, 2x2, 3x3, 4x4, 5x5, 6x6
+
+- `xym` : matrix
+- `xyp` : matrix with parenthesis
+
+example : `41m` generates a 4-vector
+
+- `xxv` : determinant, only for square matrices listed above.
 
 ## Templates (need tab)
 
