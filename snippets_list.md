@@ -1,15 +1,6 @@
 # List of snippets to implement
 
-- underline, subscript, superscript
-- \label
-- \ref
-- \cite
-- table (pas obligé)
-- url
-- note box https://tex.stackexchange.com/questions/301993/create-custom-note-environment-with-tcolorbox
-
-
-# List of functions for snippets to implement
+All done as of right now!!
 
 # List of snippets
 
@@ -30,9 +21,18 @@
 - `mm` : math mode in text ($$)
 - `mu` : math equation unnumbered (\\[\\])
 - `ct` : text for code
-- `tit` : italics text
+- `tii` : italics text
 - `tb` : bold text
 - `cb` : code block
+- `ul` : underline text
+- `tsu` : text subscript
+- `tss` : texte superscript
+- `lbl`: label
+- `rf` : reference
+- `rqf` : equation reference
+- `citn` : citation 
+- `url` : url environment
+
 
 ## Math mode
 

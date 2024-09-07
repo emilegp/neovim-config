@@ -236,7 +236,7 @@ s({trig = "tt", dscr="normal text for math mode", snippetType="autosnippet"},
   {condition = in_mathzone}
 ),
 
-s({trig = "tit", dscr="italics text", snippetType="autosnippet"},
+s({trig = "tii", dscr="italics text", snippetType="autosnippet"},
   fmta(
     [[
       \textit{<>} <>
@@ -270,6 +270,136 @@ s({trig = "cb", dscr="code block", snippetType="autosnippet"},
       \begin{lstlisting}
       <>
       \end{lstlisting}
+
+      <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = line_begin}
+),
+
+s({trig = "ul", dscr="underline text", snippetType="autosnippet"},
+  fmta(
+    [[
+      \underline{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "tsu", dscr="text subscript", snippetType="autosnippet"},
+  fmta(
+    [[
+      \textsubscript{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "tss", dscr="text superscript", snippetType="autosnippet"},
+  fmta(
+    [[
+      \textsuperscript{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "lbl", dscr="label for equations and figures", snippetType="autosnippet"},
+  fmta(
+    [[
+      \label{<>}<>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {}
+),
+
+s({trig = "rf", dscr="reference of a label", snippetType="autosnippet"},
+  fmta(
+    [[
+      \ref{<>}<>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "rqf", dscr="reference of an equation", snippetType="autosnippet"},
+  fmta(
+    [[
+      (\ref{<>}) <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "citn", dscr="citation", snippetType="autosnippet"},
+  fmta(
+    [[
+      \cite{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "url", dscr="url environment", snippetType="autosnippet"},
+  fmta(
+    [[
+      \url{<>} <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "nte", dscr="note", snippetType="autosnippet"},
+  fmta(
+    [[
+      \begin{note}[title={Note:\ }, borderline west={2pt}{0pt}{black}]
+      <>
+      \end{note}
 
       <>
     ]],

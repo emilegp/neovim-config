@@ -48,6 +48,44 @@ return {
         \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
         \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
+        \usepackage{xcolor}
+        \definecolor{codegreen}{rgb}{0,0.6,0}
+        \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+        \definecolor{codepurple}{rgb}{0.58,0,0.82}
+        \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+        \lstdefinestyle{mystyle}{
+            backgroundcolor=\color{backcolour},   
+            commentstyle=\color{codegreen},
+            keywordstyle=\color{magenta},
+            numberstyle=\tiny\color{codegray},
+            stringstyle=\color{codepurple},
+            basicstyle=\ttfamily\footnotesize,
+            breakatwhitespace=false,         
+            breaklines=true,                 
+            captionpos=b,                    
+            keepspaces=true,                 
+            numbers=left,                    
+            numbersep=5pt,                  
+            showspaces=false,                
+            showstringspaces=false,
+            showtabs=false,                  
+            tabsize=2
+        }
+        \lstset{style=mystyle}
+
+        
+        \usepackage[most]{tcolorbox}
+        \newtcolorbox{note}[1][]{
+          enhanced jigsaw,
+          borderline west={2pt}{0pt}{black},
+          sharp corners,
+          boxrule=0pt, 
+          fonttitle={\large\bfseries},
+          coltitle={black},
+          title={Note:\ },
+          attach title to upper,
+          #1
+        }
         %----------------------------------------------------
 
         \setlength{\parindent}{0pt}
@@ -110,13 +148,6 @@ return {
         \setcounter{page}{1}
 
         %----------------------------------------------------
-
-        \begin{onecolabstract}
-
-
-
-          \vspace{4mm}
-        \end{onecolabstract}
 
         \section{<>}
 
@@ -186,6 +217,44 @@ return {
         \usepackage{enumitem}
         \setlist[itemize]{label=\textbullet}
 
+        \usepackage{xcolor}
+        \definecolor{codegreen}{rgb}{0,0.6,0}
+        \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+        \definecolor{codepurple}{rgb}{0.58,0,0.82}
+        \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+        \lstdefinestyle{mystyle}{
+            backgroundcolor=\color{backcolour},   
+            commentstyle=\color{codegreen},
+            keywordstyle=\color{magenta},
+            numberstyle=\tiny\color{codegray},
+            stringstyle=\color{codepurple},
+            basicstyle=\ttfamily\footnotesize,
+            breakatwhitespace=false,         
+            breaklines=true,                 
+            captionpos=b,                    
+            keepspaces=true,                 
+            numbers=left,                    
+            numbersep=5pt,                  
+            showspaces=false,                
+            showstringspaces=false,
+            showtabs=false,                  
+            tabsize=2
+        }
+        \lstset{style=mystyle}
+
+        \usepackage[most]{tcolorbox}
+        \newtcolorbox{note}[1][]{
+          enhanced jigsaw,
+          borderline west={2pt}{0pt}{black},
+          sharp corners,
+          boxrule=0pt, 
+          fonttitle={\large\bfseries},
+          coltitle={black},
+          title={Note:\ },
+          attach title to upper,
+          #1
+        }
+
         \begin{document}
         \pagestyle{fancy}
         \setlength{\headheight}{14pt}
@@ -202,10 +271,6 @@ return {
         \pagenumbering{arabic}
         \setcounter{page}{1}
         %----------------------------------------------------
-        \begin{onecolabstract}
-
-          \vspace{4mm}
-        \end{onecolabstract}
 
         \section{<>}
 
@@ -258,6 +323,44 @@ return {
         \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
         \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
         \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+        \usepackage{xcolor}
+        \definecolor{codegreen}{rgb}{0,0.6,0}
+        \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+        \definecolor{codepurple}{rgb}{0.58,0,0.82}
+        \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+        \lstdefinestyle{mystyle}{
+            backgroundcolor=\color{backcolour},   
+            commentstyle=\color{codegreen},
+            keywordstyle=\color{magenta},
+            numberstyle=\tiny\color{codegray},
+            stringstyle=\color{codepurple},
+            basicstyle=\ttfamily\footnotesize,
+            breakatwhitespace=false,         
+            breaklines=true,                 
+            captionpos=b,                    
+            keepspaces=true,                 
+            numbers=left,                    
+            numbersep=5pt,                  
+            showspaces=false,                
+            showstringspaces=false,
+            showtabs=false,                  
+            tabsize=2
+        }
+        \lstset{style=mystyle}
+
+        \usepackage[most]{tcolorbox}
+        \newtcolorbox{note}[1][]{
+          enhanced jigsaw,
+          borderline west={2pt}{0pt}{black},
+          sharp corners,
+          boxrule=0pt, 
+          fonttitle={\large\bfseries},
+          coltitle={black},
+          title={Note:\ },
+          attach title to upper,
+          #1
+        }
 
         %----------------------------------------------------
 

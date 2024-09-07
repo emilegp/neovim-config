@@ -943,5 +943,19 @@ s({trig = "mab", dscr="mathbb style for capital letters", snippetType="autosnipp
   {condition = in_mathzone}
 ),
 
+s({trig = "lm", dscr="limit", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \lim_{<> \to <>} <>
+    ]],
+    {
+      i(1),
+      i(2),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
 }
 
