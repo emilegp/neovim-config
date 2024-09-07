@@ -1,13 +1,11 @@
 # List of snippets to implement
 
-- product, limits
 - underline, subscript, superscript
 - \label
 - \ref
 - \cite
 - table (pas obligé)
 - url
-- code element
 - note box https://tex.stackexchange.com/questions/301993/create-custom-note-environment-with-tcolorbox
 
 
@@ -34,6 +32,7 @@
 - `ct` : text for code
 - `tit` : italics text
 - `tb` : bold text
+- `cb` : code block
 
 ## Math mode
 
@@ -108,6 +107,7 @@
 - `td` : tilde on top
 - `bar` : bar on top
 - `mab` : mathbb style for capital letters (e.g. R for real numbers)
+- `lm` : limit
 
 
 

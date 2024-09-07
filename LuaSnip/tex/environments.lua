@@ -264,5 +264,22 @@ s({trig = "tb", dscr="bold text", snippetType="autosnippet"},
   {}
 ),
 
+s({trig = "cb", dscr="code block", snippetType="autosnippet"},
+  fmta(
+    [[
+      \begin{lstlisting}
+      <>
+      \end{lstlisting}
+
+      <>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = line_begin}
+),
 
 }
