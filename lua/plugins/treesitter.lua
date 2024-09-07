@@ -5,7 +5,7 @@ return {
     config = function()
       local configs = require("nvim-treesitter.configs")
       configs.setup({
-        ensure_installed = { "lua", "bash", "bibtex", "c", "cpp", "html", "julia", "markdown", "python" },
+        ensure_installed = { "lua", "bash", "bibtex", "c", "cpp", "html", "julia", "markdown", "python"},
         highlight = { enable = true },
         indent = { enable = true },
         textobjects = {
