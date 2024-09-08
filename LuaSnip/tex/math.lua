@@ -140,7 +140,21 @@ s({trig = "bok", dscr="quantum mechanics bra-operator-ket", snippetType="autosni
   {condition = in_mathzone}
 ),
 
-s({trig = "ha", dscr="hat", snippetType="autosnippet", wordTrig = false},
+s({trig = "qav", dscr="quantum mechanics average", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \langle <> \rangle<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+
+s({trig = "hat", dscr="hat", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
       \hat{<>}<>

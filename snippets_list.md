@@ -46,7 +46,8 @@ All done as of right now!!
 - `ket` : quantum mechanics ket
 - `bk` : quantum mechanics braket
 - `bok` : quantum mechanics bra-operator-ket
-- `ha` : hat
+- `qav` : quantum mechanics average
+- `hat` : hat
 - `su` : subscript
 - `ss` : superscript
 - `sm` : sum

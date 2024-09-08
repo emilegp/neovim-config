@@ -29,7 +29,7 @@ return {
           ['<C-Space>'] = cmp.mapping.complete(),
           ['<C-e>'] = cmp.mapping.abort(),
           ['<CR>'] = cmp.mapping.confirm({ select = true }),
-          ['<Tab>'] = cmp.mapping(function(fallback)
+          ['<S-Right>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.select_next_item()
 --            elseif luasnip.expand_or_jumpable() then
@@ -38,7 +38,7 @@ return {
               fallback()
             end
           end, { 'i', 's' }),
-          ['<S-Tab>'] = cmp.mapping(function(fallback)
+          ['<S-Left>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.select_prev_item()
 --            elseif luasnip.jumpable(-1) then
@@ -49,7 +49,7 @@ return {
           end, { 'i', 's' }),
         }),
         sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
+          { name = 'nvim_lsp',},
 --          { name = 'luasnip' },
         }, {
           { name = 'buffer' },
