@@ -101,7 +101,7 @@ s({trig = "bra", dscr="quantum mechanics bra", snippetType="autosnippet", wordTr
 s({trig = "ket", dscr="quantum mechanics ket", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      | <> \rangle <>
+      | <> \rangle<>
     ]],
     {
       i(1),
@@ -114,7 +114,7 @@ s({trig = "ket", dscr="quantum mechanics ket", snippetType="autosnippet", wordTr
 s({trig = "bk", dscr="quantum mechanics braket", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \langle <> | <> \rangle <>
+      \langle <> | <> \rangle<>
     ]],
     {
       i(1),
@@ -128,7 +128,7 @@ s({trig = "bk", dscr="quantum mechanics braket", snippetType="autosnippet", word
 s({trig = "bok", dscr="quantum mechanics bra-operator-ket", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \langle <> | <> | <> \rangle <>
+      \langle <> | <> | <> \rangle<>
     ]],
     {
       i(1),
@@ -511,7 +511,7 @@ s({trig = "udr", dscr="underline", snippetType="autosnippet", wordTrig = false},
 s({trig = "sc", dscr="scalar dot product", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \cdot <>
+      \cdot<>
     ]],
     {
       i(0),
@@ -523,7 +523,7 @@ s({trig = "sc", dscr="scalar dot product", snippetType="autosnippet", wordTrig =
 s({trig = "xx", dscr="times cross", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \times <>
+      \times<>
     ]],
     {
       i(0),
@@ -535,7 +535,7 @@ s({trig = "xx", dscr="times cross", snippetType="autosnippet", wordTrig = false}
 s({trig = "dv", dscr="division symbol", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \div <>
+      \div<>
     ]],
     {
       i(0),
@@ -547,7 +547,7 @@ s({trig = "dv", dscr="division symbol", snippetType="autosnippet", wordTrig = fa
 s({trig = "eu", dscr="equivalent aka triple line equal", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \equiv <>
+      \equiv<>
     ]],
     {
       i(0),
@@ -559,7 +559,7 @@ s({trig = "eu", dscr="equivalent aka triple line equal", snippetType="autosnippe
 s({trig = "neq", dscr="not equal", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \neq <>
+      \neq<>
     ]],
     {
       i(0),
@@ -571,7 +571,7 @@ s({trig = "neq", dscr="not equal", snippetType="autosnippet", wordTrig = false},
 s({trig = "sim", dscr="similar or tilde", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \sim <>
+      \sim<>
     ]],
     {
       i(0),
@@ -583,7 +583,7 @@ s({trig = "sim", dscr="similar or tilde", snippetType="autosnippet", wordTrig = 
 s({trig = "ap", dscr="approximate equal", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \approx <>
+      \approx<>
     ]],
     {
       i(0),
@@ -595,7 +595,7 @@ s({trig = "ap", dscr="approximate equal", snippetType="autosnippet", wordTrig = 
 s({trig = "pt", dscr="proportionnal to", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \propto <>
+      \propto<>
     ]],
     {
       i(0),
@@ -607,7 +607,7 @@ s({trig = "pt", dscr="proportionnal to", snippetType="autosnippet", wordTrig = f
 s({trig = "pm", dscr="plus minus", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \pm <>
+      \pm<>
     ]],
     {
       i(0),
@@ -619,7 +619,7 @@ s({trig = "pm", dscr="plus minus", snippetType="autosnippet", wordTrig = false},
 s({trig = "mp", dscr="minus plus", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \mp <>
+      \mp<>
     ]],
     {
       i(0),
@@ -631,7 +631,7 @@ s({trig = "mp", dscr="minus plus", snippetType="autosnippet", wordTrig = false},
 s({trig = "qed", dscr="box", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \Box <>
+      \Box<>
     ]],
     {
       i(0),
@@ -643,7 +643,7 @@ s({trig = "qed", dscr="box", snippetType="autosnippet", wordTrig = false},
 s({trig = "leq", dscr="less or equal than", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \leq <>
+      \leq<>
     ]],
     {
       i(0),
@@ -655,7 +655,7 @@ s({trig = "leq", dscr="less or equal than", snippetType="autosnippet", wordTrig 
 s({trig = "nleq", dscr="not less or equal than", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \nleq <>
+      \nleq<>
     ]],
     {
       i(0),
@@ -667,7 +667,7 @@ s({trig = "nleq", dscr="not less or equal than", snippetType="autosnippet", word
 s({trig = "geq", dscr="greater or equal than", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \geq <>
+      \geq<>
     ]],
     {
       i(0),
@@ -679,7 +679,7 @@ s({trig = "geq", dscr="greater or equal than", snippetType="autosnippet", wordTr
 s({trig = "ngeq", dscr="not greater or equal than", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \ngeq <>
+      \ngeq<>
     ]],
     {
       i(0),
@@ -691,7 +691,7 @@ s({trig = "ngeq", dscr="not greater or equal than", snippetType="autosnippet", w
 s({trig = "iel", dscr="is element of", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \in <>
+      \in<>
     ]],
     {
       i(0),
@@ -703,7 +703,7 @@ s({trig = "iel", dscr="is element of", snippetType="autosnippet", wordTrig = fal
 s({trig = "niel", dscr="is not element of", snippetType="autosnippet", wordTrig = false, priority=1001},
   fmta(
     [[
-      \nin <>
+      \nin<>
     ]],
     {
       i(0),
@@ -715,7 +715,7 @@ s({trig = "niel", dscr="is not element of", snippetType="autosnippet", wordTrig 
 s({trig = "wd", dscr="wedge", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \wedge <>
+      \wedge<>
     ]],
     {
       i(0),
@@ -727,7 +727,7 @@ s({trig = "wd", dscr="wedge", snippetType="autosnippet", wordTrig = false},
 s({trig = "da", dscr="dagger", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \dagger <>
+      \dagger<>
     ]],
     {
       i(0),
@@ -739,7 +739,7 @@ s({trig = "da", dscr="dagger", snippetType="autosnippet", wordTrig = false},
 s({trig = "al", dscr="arrow left", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \leftarrow <>
+      \leftarrow<>
     ]],
     {
       i(0),
@@ -751,7 +751,7 @@ s({trig = "al", dscr="arrow left", snippetType="autosnippet", wordTrig = false},
 s({trig = "aal", dscr="double arrow left", snippetType="autosnippet", wordTrig = false, priority=1001},
   fmta(
     [[
-      \Leftarrow <>
+      \Leftarrow<>
     ]],
     {
       i(0),
@@ -763,7 +763,7 @@ s({trig = "aal", dscr="double arrow left", snippetType="autosnippet", wordTrig =
 s({trig = "ar", dscr="arrow right", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \rightarrow <>
+      \rightarrow<>
     ]],
     {
       i(0),
@@ -775,7 +775,7 @@ s({trig = "ar", dscr="arrow right", snippetType="autosnippet", wordTrig = false}
 s({trig = "im", dscr="double arrow right or implies", snippetType="autosnippet", wordTrig = false, priority=1001},
   fmta(
     [[
-      \Rightarrow <>
+      \Rightarrow<>
     ]],
     {
       i(0),
@@ -787,7 +787,7 @@ s({trig = "im", dscr="double arrow right or implies", snippetType="autosnippet",
 s({trig = "nim", dscr="double arrow right or implies", snippetType="autosnippet", wordTrig = false, priority=1002},
   fmta(
     [[
-      \nRightarrow <>
+      \nRightarrow<>
     ]],
     {
       i(0),
@@ -799,7 +799,7 @@ s({trig = "nim", dscr="double arrow right or implies", snippetType="autosnippet"
 s({trig = "ie", dscr="double arrow left right or is equivalent to", snippetType="autosnippet", wordTrig = false, priority=1001},
   fmta(
     [[
-      \Leftrightarrow <>
+      \Leftrightarrow<>
     ]],
     {
       i(0),
@@ -811,7 +811,7 @@ s({trig = "ie", dscr="double arrow left right or is equivalent to", snippetType=
 s({trig = "inf", dscr="infinity", snippetType="autosnippet", wordTrig = false, priority=1011},
   fmta(
     [[
-      \infty <>
+      \infty<>
     ]],
     {
       i(0),
@@ -823,7 +823,7 @@ s({trig = "inf", dscr="infinity", snippetType="autosnippet", wordTrig = false, p
 s({trig = "nb", dscr="nabla", snippetType="autosnippet", wordTrig = false, priority=1011},
   fmta(
     [[
-      \nabla <>
+      \nabla<>
     ]],
     {
       i(0),
@@ -835,7 +835,7 @@ s({trig = "nb", dscr="nabla", snippetType="autosnippet", wordTrig = false, prior
 s({trig = "dl", dscr="partial derivative del", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \partial <>
+      \partial<>
     ]],
     {
       i(0),
@@ -847,7 +847,7 @@ s({trig = "dl", dscr="partial derivative del", snippetType="autosnippet", wordTr
 s({trig = "fra", dscr="for all", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \forall <>
+      \forall<>
     ]],
     {
       i(0),
@@ -859,7 +859,7 @@ s({trig = "fra", dscr="for all", snippetType="autosnippet", wordTrig = false},
 s({trig = "exi", dscr="exists", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \exists <>
+      \exists<>
     ]],
     {
       i(0),
@@ -871,7 +871,7 @@ s({trig = "exi", dscr="exists", snippetType="autosnippet", wordTrig = false},
 s({trig = "nth", dscr="nothing", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \varnothing <>
+      \varnothing<>
     ]],
     {
       i(0),
@@ -883,7 +883,7 @@ s({trig = "nth", dscr="nothing", snippetType="autosnippet", wordTrig = false},
 s({trig = "hb", dscr="hbar", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \hbar <>
+      \hbar<>
     ]],
     {
       i(0),
@@ -960,7 +960,7 @@ s({trig = "mab", dscr="mathbb style for capital letters", snippetType="autosnipp
 s({trig = "lm", dscr="limit", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \lim_{<> \to <>} <>
+      \lim_{<> \to <>}<>
     ]],
     {
       i(1),
