@@ -1,6 +1,6 @@
 # List of snippets to implement
 
-All done as of right now!!
+- trigonometric functions
 
 # List of snippets
 
@@ -19,10 +19,10 @@ All done as of right now!!
 ## In text
 
 - `mm` : math mode in text ($$)
-- `mu` : math equation unnumbered (\\[\\])
+- `mun` : math equation unnumbered (\\[\\])
 - `ct` : text for code
 - `tii` : italics text
-- `tb` : bold text
+- `tb` : bold tex
 - `cb` : code block
 - `ul` : underline text
 - `tsu` : text subscript
@@ -74,7 +74,7 @@ All done as of right now!!
 - `udr` : underline
 - `sc` : scalar dot product
 - `xx` : times cross
-- `eu` : equivalent equal (triple lines)
+- `eu` : equivalent equal (triple les)
 - `neq` : not equal
 - `sim` : sim or tilde
 - `ap` : approximate equal
@@ -86,8 +86,8 @@ All done as of right now!!
 - `nleq` : not less or equal
 - `geq` : greater or equal
 - `ngeq` : not greater or equal
-- `iel` : is element of
-- `niel` : is not element of
+- `el` : is element of
+- `nel` : is not element of
 - `wd` : wedge
 - `da` : dagger
 - `al` : arrow left
@@ -103,14 +103,22 @@ All done as of right now!!
 - `exi` : there exists
 - `nth` : nothing
 - `hb` : hbar
-- `dt` : dot on top
-- `ddt` : double dot on top
+- `dot` : dot on top
+- `ddot` : double dot on top
 - `td` : tilde on top
 - `bar` : bar on top
 - `mab` : mathbb style for capital letters (e.g. R for real numbers)
 - `lm` : limit
-
-
+- `ad` : + symbol shortcut
+- `sin` : sine function
+- `cos` : cosine function
+- `tan` : tangent function
+- `sec` : secant function
+- `cosec` : cosecant function
+- `cot` : cotangent function
+- `asin` : arcsine function
+- `acos` : arccosine function
+- `atan` : arctangent function
 
 
 #### Exclusions

@@ -17,7 +17,10 @@ return {
       [[
         \documentclass[11pt,letterpaper]{article}
         \usepackage[top=3cm, bottom=2cm, left=2cm, right=2cm, columnsep=20pt]{geometry}
+        \usepackage{pdfpages}
         \usepackage{graphicx}
+        \usepackage{etoolbox}
+        \apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
         % \usepackage[numbers]{natbib}
         \usepackage[T1]{fontenc}
         \usepackage{ragged2e}
@@ -155,7 +158,7 @@ return {
 
         \clearpage
 
-        % \bibliographystyle{plain}
+        % \bibliographystyle{unsrtnat}
         % \bibliography{My_Library}
 
         \end{document}
@@ -293,7 +296,10 @@ return {
       [[
         \documentclass[11pt,letterpaper]{article}
         \usepackage[top=3cm, bottom=2cm, left=2cm, right=2cm, columnsep=20pt]{geometry}
+        \usepackage{pdfpages}
         \usepackage{graphicx}
+        \usepackage{etoolbox}
+        \apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
         % \usepackage[numbers]{natbib}
         \usepackage[T1]{fontenc}
         \usepackage{ragged2e}
@@ -425,20 +431,13 @@ return {
 
         %----------------------------------------------------
 
-        \begin{onecolabstract}
-
-
-
-          \vspace{4mm}
-        \end{onecolabstract}
-
         \section{<>}
 
         <>
 
         \clearpage
 
-        % \bibliographystyle{plain}
+        % \bibliographystyle{unsrtnat}
         % \bibliography{My_Library}
 
         \end{document}

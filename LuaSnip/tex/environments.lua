@@ -148,10 +148,10 @@ s({trig="fi", dscr="figure environmennt", snippetType="autosnippet"},
   {condition = line_begin}
 ),
 
-s({trig="mm", dscr="inline math mode", snippetType="autosnippet"},
+s({trig="mmm", dscr="inline math mode", snippetType="autosnippet"},
   fmta(
     [[
-      $<>$ <>
+      $<>$<>
     ]],
     {
       i(1),
@@ -161,10 +161,10 @@ s({trig="mm", dscr="inline math mode", snippetType="autosnippet"},
   {condition = not_in_mathzone}
 ),
 
-s({trig="mu", dscr="math equation but unnumbered", snippetType="autosnippet", priority=1100},
+s({trig="mun", dscr="math equation but unnumbered", snippetType="autosnippet", priority=1100},
   fmta(
     [[
-      \[<>\] <>
+      \[<>\]<>
     ]],
     {
       i(1),
@@ -211,7 +211,7 @@ s({trig="al", dscr="align environment", snippetType="autosnippet"},
 s({trig = "ct", dscr="code text", snippetType="autosnippet"},
   fmta(
     [[
-      \texttt{<>} <>
+      \texttt{<>}<>
     ]],
 
     {
@@ -225,7 +225,7 @@ s({trig = "ct", dscr="code text", snippetType="autosnippet"},
 s({trig = "tt", dscr="normal text for math mode", snippetType="autosnippet"},
   fmta(
     [[
-      \text{<>} <>
+      \text{<>}<>
     ]],
 
     {
@@ -239,7 +239,7 @@ s({trig = "tt", dscr="normal text for math mode", snippetType="autosnippet"},
 s({trig = "tii", dscr="italics text", snippetType="autosnippet"},
   fmta(
     [[
-      \textit{<>} <>
+      \textit{<>}<>
     ]],
 
     {
@@ -253,7 +253,7 @@ s({trig = "tii", dscr="italics text", snippetType="autosnippet"},
 s({trig = "tb", dscr="bold text", snippetType="autosnippet"},
   fmta(
     [[
-      \textbf{<>} <>
+      \textbf{<>}<>
     ]],
 
     {
@@ -285,7 +285,7 @@ s({trig = "cb", dscr="code block", snippetType="autosnippet"},
 s({trig = "ul", dscr="underline text", snippetType="autosnippet"},
   fmta(
     [[
-      \underline{<>} <>
+      \underline{<>}<>
     ]],
 
     {
@@ -299,7 +299,7 @@ s({trig = "ul", dscr="underline text", snippetType="autosnippet"},
 s({trig = "tsu", dscr="text subscript", snippetType="autosnippet"},
   fmta(
     [[
-      \textsubscript{<>} <>
+      \textsubscript{<>}<>
     ]],
 
     {
@@ -313,7 +313,21 @@ s({trig = "tsu", dscr="text subscript", snippetType="autosnippet"},
 s({trig = "tss", dscr="text superscript", snippetType="autosnippet"},
   fmta(
     [[
-      \textsuperscript{<>} <>
+      \textsuperscript{<>}<>
+    ]],
+
+    {
+      i(1),
+      i(0)
+    }
+  ),
+  {condition = not_in_mathzone}
+),
+
+s({trig = "txtr", dscr="red text", snippetType="autosnippet"},
+  fmta(
+    [[
+      \textcolor{red}{<>}<>
     ]],
 
     {

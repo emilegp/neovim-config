@@ -210,7 +210,7 @@ s({trig = "sm", dscr="defined sum", snippetType="autosnippet", wordTrig = false}
 s({trig = "de", dscr="derivative", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \frac{d<>}{d<>}<>
+      \frac{d <>}{d <>}<>
     ]],
     {
       i(1),
@@ -224,7 +224,7 @@ s({trig = "de", dscr="derivative", snippetType="autosnippet", wordTrig = false},
 s({trig = "dse", dscr="second derivative", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
-      \frac{d^2 <>}{d<>^2}<>
+      \frac{d^2 <>}{d <>^2}<>
     ]],
     {
       i(1),
@@ -688,7 +688,7 @@ s({trig = "ngeq", dscr="not greater or equal than", snippetType="autosnippet", w
   {condition = in_mathzone}
 ),
 
-s({trig = "iel", dscr="is element of", snippetType="autosnippet", wordTrig = false},
+s({trig = "el", dscr="is element of", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
       \in<>
@@ -700,7 +700,7 @@ s({trig = "iel", dscr="is element of", snippetType="autosnippet", wordTrig = fal
   {condition = in_mathzone}
 ),
 
-s({trig = "niel", dscr="is not element of", snippetType="autosnippet", wordTrig = false, priority=1001},
+s({trig = "nel", dscr="is not element of", snippetType="autosnippet", wordTrig = false, priority=1001},
   fmta(
     [[
       \nin<>
@@ -892,7 +892,7 @@ s({trig = "hb", dscr="hbar", snippetType="autosnippet", wordTrig = false},
   {condition = in_mathzone}
 ),
 
-s({trig = "dt", dscr="dot on top", snippetType="autosnippet", wordTrig = false},
+s({trig = "dot", dscr="dot on top", snippetType="autosnippet", wordTrig = false},
   fmta(
     [[
       \dot{<>}<>
@@ -905,7 +905,7 @@ s({trig = "dt", dscr="dot on top", snippetType="autosnippet", wordTrig = false},
   {condition = in_mathzone}
 ),
 
-s({trig = "ddt", dscr="double dot on top", snippetType="autosnippet", wordTrig = false, priority=1001},
+s({trig = "ddot", dscr="double dot on top", snippetType="autosnippet", wordTrig = false, priority=1001},
   fmta(
     [[
       \ddot{<>}<>
@@ -965,6 +965,135 @@ s({trig = "lm", dscr="limit", snippetType="autosnippet", wordTrig = false},
     {
       i(1),
       i(2),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "ad", dscr="+ symbol", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      + <>
+    ]],
+    {
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "sin", dscr="sin shortcut", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \sin\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "cos", dscr="cos shortcut", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \cos\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "tan", dscr="tan shortcut", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \tan\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "sec", dscr="sec shortcut", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \sec\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "cosec", dscr="cosec shortcut", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \csc\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "cot", dscr="cotan shortcut", snippetType="autosnippet", wordTrig = false},
+  fmta(
+    [[
+      \cot\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "asin", dscr="arcsin shortcut", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \arcsin\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "acos", dscr="arccos shortcut", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \arccos\left( <> \right)<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
+
+s({trig = "atan", dscr="arctan shortcut", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \arctan\left( <> \right)<>
+    ]],
+    {
+      i(1),
       i(0),
     }
   ),
