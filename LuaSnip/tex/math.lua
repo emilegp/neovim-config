@@ -1100,5 +1100,17 @@ s({trig = "atan", dscr="arctan shortcut", snippetType="autosnippet", wordTrig = 
   {condition = in_mathzone}
 ),
 
+s({trig = "mb", dscr="math bold", snippetType="autosnippet", wordTrig = false, priority=1001},
+  fmta(
+    [[
+      \mathbf{<>}<>
+    ]],
+    {
+      i(1),
+      i(0),
+    }
+  ),
+  {condition = in_mathzone}
+),
 }
 
